@@ -1,0 +1,21 @@
+# studiovolt-web = PUBLIC site repo. ONLY static legal/site HTML belongs here.
+# NEVER commit internal notes, tooling, or secrets — this repo deploys the whole
+# tree to https://studiovolt.dev/<path> (.github/workflows/pages.yml -> path: '.').
+.claude/
+_bmad/
+CLAUDE.md
+project_notes/
+scripts/
+security-audits/
+SECURITY.md
+.env
+.env.*
+*.key
+*.pem
+*.p8
+*.p12
+# macOS / editor
+.DS_Store
+*.swp
+*.swo
+*~
