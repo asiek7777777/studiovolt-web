@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
     <title>Studio Volt</title>
     <style>
       * {
@@ -35,6 +34,33 @@
       }
       p {
         color: #94a3b8;
+        margin-bottom: 2rem;
+      }
+      .apps {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .app-card {
+        background: #1e1e1e;
+        border: 1px solid #2a2a2a;
+        border-radius: 12px;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+        color: #e2e8f0;
+        transition: border-color 0.2s;
+      }
+      .app-card:hover {
+        border-color: #facc15;
+      }
+      .app-card h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+      }
+      .app-card span {
+        font-size: 0.85rem;
+        color: #94a3b8;
       }
       footer {
         position: fixed;
@@ -51,6 +77,32 @@
     <div class="container">
       <h1>Studio <span>Volt</span></h1>
       <p>Apps built in Switzerland</p>
+      <div class="apps">
+        <a href="/gps-stats/" class="app-card">
+          <h2>GPS Stats</h2>
+          <span>GPS Speedometer & Performance Tracker</span>
+        </a>
+        <a href="/gspike/" class="app-card">
+          <h2>GSpike</h2>
+          <span>G-Force Meter for iPhone & Apple Watch</span>
+        </a>
+        <a href="/awaits/" class="app-card">
+          <h2>Awaits</h2>
+          <span>Countdown Widget — Days to Events</span>
+        </a>
+        <a href="/flight-metrics/" class="app-card">
+          <h2>Flight Metrics</h2>
+          <span>GPS Flight Recorder — Speed, Altitude &amp; G-Force</span>
+        </a>
+        <a href="/eunomia/" class="app-card">
+          <h2>Eunomia</h2>
+          <span>A private space for clearer thinking</span>
+        </a>
+        <a href="/lunoria/" class="app-card">
+          <h2>Lunoria</h2>
+          <span>The honest astrology app &mdash; Coming soon</span>
+        </a>
+      </div>
     </div>
     <footer>&copy; 2026 Studio Volt</footer>
   </body>
